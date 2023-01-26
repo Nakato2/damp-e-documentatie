@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Verplichte metatags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap-CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Damp-e Documentatie</title>
+  </head>
+  <style>
+    body {
+      background-color: #f2ece5;
+      color: #202e46;
+      font-family: 'Red Hat Mono', monospace;
+    }
+    button {
+      color: white;
+    }
+
+    .accordion-button {
+        font-weight: 800;
+    }
+    .accordion-button:focus {
+      /* z-index: 3; */
+      /* border-color: #86b7fe; */
+      /* outline: 0; */
+      box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #202e46;
+      background-color: #e7f1ff;
+    }
+
+    .accordion-item {
+        background-color: #ffffff;
+       
+    }
+    
+    .navbar {
+    background-color: #37537D;
+    color: #ffffff;
+    font-weight: 700;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="imgs/Dampelogo.png" width="100 height=100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="accordion container" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Announcements: [bericht notices verschillende paginas]
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <b>How to make a GLOBAL announcement:</b>
+              <p>
+                Stores -> Configuration -> Magna-theme -> Alerts -> Store Alert
+                -> Alert
+              </p>
+              <img src="imgs/globalalert1.png" class="img-fluid" />
+              <div class="alert alert-info" role="alert">
+                This will be displayed on every single page of the website.
+              </div>
+            </div>
+
+            <div class="accordion-body">
+              <b>How to make a CHECKOUT announcement:</b>
+              <p>
+                Stores -> Configuration -> Damp-e -> Checkout -> Notice content
+              </p>
+              <img src="imgs/CHECKOUTANN1.png" class="img-fluid" />
+              <div class="alert alert-info" role="alert">
+                This will only be displayed on the checkout page.
+              </div>
+            </div>
+
+            <div class="accordion-body">
+              <b>How to make a CUSTOMER SERVICE page announcement:</b>
+              <p>
+                Content - > Pages -> Klantenservice -> content -> Dampe – Faq
+                Notice
+              </p>
+              <img src="imgs/CHECKOUTANN1.png" class="img-fluid" />
+              <div class="alert alert-info" role="alert">
+                This will only be displayed on the customer service page.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Menus: [Hoe je categorieen aan menus toevoegd]
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <b>How to add a category to the menus:</b> <br /><br />
+                <b>Homepage menu: </b>
+                <p>Content -> menus -> homepage menu</p>
+                <b>Top menu: </b>
+                <p>Content -> menus -> Header Main Menu</p>
+                <p>
+                  1. Head over to the nodes and click on append, to create a new
+                  node:
+                </p>
+                <img src="imgs/NODEIMAGE1.png" class="img-fluid" /> <br />
+                <p>
+                  2. Next head over to node you just created and click on edit::
+                </p>
+                <img src="imgs/NODEIMAGE2.png" class="img-fluid" /> <br />
+                <p>
+                  3. Select the category you want to add, and give it a name:
+                </p>
+                <img src="imgs/NODEIMAGE3.png" class="img-fluid" /> <br />
+                <p>4. Save & then refresh the cache.</p>
+                <div class="alert alert-info" role="alert">
+                  You have to add the new category to both menus, otherwise it
+                  will only be visible in one of them. If the node isnt visible
+                  in the menu, make sure it's enabled in the settings. Not
+                  enabled by default.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Filters: [Hoe je filters toevoegd aan categories]
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <b>How to add a filter to a category page:</b>
+               
+                <p> Stores -> Attributes -> Product:  <br>
+               1. Select attribute you want as a filter  <br>
+                  2. Click on “storefront properties” -> Use in layered navigation -> select filterable(with results) <br>
+                 3. Save the attribute and refresh the cache.  </p>
+                 <img src="imgs/attribuuexample.png" class="img-fluid" />
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Banners: [banners aanpassen]
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <img src="imgs/homepage banners.png" class="img-fluid">
+                    <b>How to change homepage banners</b>
+                    <p>
+                    1. Content -> Pages -> Homepage <br>
+                    2. Double click on the Damp-e Head Banners widget
+                    </p>
+                    <img src="imgs/banners edit.png" class="img-fluid">
+                    <div class="alert alert-info" role="alert">
+                        This is done the same way for the headpages "Roken & Vapen", " Kruiden & Supplementen" & "Rokersbenodigheden" on their respective pages.
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button collapsed font-weight-bold"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Cache & Reindexing: [hoe je de cache / reindex refreshed]
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <b>How to refresh the cache:</b>
+                        <p>
+                          System -> Tools -> Cache Management: <br />
+                          Select all - > refresh-> Submit
+                        </p>
+                        <img src="imgs/cacheimage1.png" class="img-fluid" />
+                        <br /><br />
+                        <b>How to invalidate index:</b>
+                        <p>
+                          System -> Tools -> Index management:<br />
+                          Select all -> Invalidate index -> Submit
+                        </p>
+                        <img src="imgs/cacheimage1.png" class="img-fluid" />
+                        <div class="alert alert-info" role="alert">
+                          This makes it so the reindex happens during the next cronjob run
+                        </div>
+                      </div>
+                    </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
